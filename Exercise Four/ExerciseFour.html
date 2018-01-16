@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>What time of day is it? (morning, noon, or evening?)</p>
+
+<input id="myInput" type="text">
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var letter = document.getElementById("myInput").value;
+    var text;
+
+    // If the letter is "c"
+    if (letter === "morning") {
+        text = "Since it is morning, you should be eating breakfast. We suggest eggs and toast.";
+        
+    // If the letter is "b" 
+    } else if (letter === "noon") {
+        text = "Since it is noon, you should be eating lunch. We suggest a salad.";
+
+    // If the letter is "b" 
+    } else if (letter === "evening") {
+        text = "Since it is evening, you should be eating dinner. We suggest a chicken and rice.";
+        
+    // If the letter is anything else
+    } else {
+        text = "please input morning, noon or evening";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

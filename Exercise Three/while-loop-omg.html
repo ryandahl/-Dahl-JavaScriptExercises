@@ -1,0 +1,40 @@
+<html>
+
+<head>
+
+
+
+</head>
+
+<body>
+
+
+<script>
+var continue_loop = true
+      var loop_counter = 0
+      while (continue_loop) {
+        continue_loop = (prompt("Would you like to print your name? ", "") == 'yes' );
+        if (continue_loop ){
+          name_string = prompt("Name? ", "")
+	var exclamation_counter=0
+	var  exclamation_points=""
+	while(exclamation_counter <= loop_counter){
+		exclamation_points=exclamation_points+"!"
+	exclamation_counter=exclamation_counter+1
+	}
+          console.log(name_string+exclamation_points);
+        } else {
+          break
+        }
+        
+        loop_counter = loop_counter+ 1
+      }
+  </script>
+
+
+</script>
+
+
+</body>
+
+</html>
